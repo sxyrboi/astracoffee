@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astra Coffee</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Astraa<span> Coffee<span> Tarakan</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+
+      </div>
+
+      <div class="navbar-extra">
+        <!-- Search Icon -->
+       <!-- Shopping Cart Icon -->
+<a href="pembelian.html" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+
+        <!-- Hamburger Menu Icon -->
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero section Start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>STAR OUR DAY WITH<span> COFFEE.</span></h1>
+        <p>Providing a selection of quality coffee for you</p>
+        <a href="pembelian.html" class="cta">Order Now</a>
+
+      </main>
+    </section>
+    <!-- Hero Section End-->
+
+    <!-- About Section Start-->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.jpg" alt="Tentang Kami">
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih kopi kami?</h3>
+          <p>Kualitas Premium: Kami hanya menggunakan biji kopi terbaik yang diproses dengan standar tinggi.
+            Beragam Pilihan: Dari kopi hitam klasik hingga kreasi rasa modern, kami punya sesuatu untuk setiap selera.
+            Berdaya Lokal: Kami bangga mendukung petani kopi lokal dan mempromosikan kopi khas Indonesia ke dunia.
+            Pelayanan Terbaik: Kepuasan pelanggan adalah prioritas utama kami.</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end-->
+
+    <!-- Menu Section Start-->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/img/1.jpg" alt="Latte" class="menu-card-img">
+          <h3 class="menu-card-title">- Latte -</h3>
+          <p class="menu-card-price">IDR 25K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/img/2.jpg" alt="Espresso" class="menu-card-img">
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">IDR 20K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/img/6.jpg" alt="Hazelnut" class="menu-card-img">
+          <h3 class="menu-card-title">- Hazelnut -</h3>
+          <p class="menu-card-price">IDR 28K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/img/4.jpg" alt="Cheese Cake" class="menu-card-img">
+          <h3 class="menu-card-title">- Cheese Cake-</h3>
+          <p class="menu-card-price">IDR 30K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/img/3.jpg" alt="Cherry Cake" class="menu-card-img">
+          <h3 class="menu-card-title">- Cherry Cake -</h3>
+          <p class="menu-card-price">IDR 35K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section end-->
+
+    <!-- Contact Section Start-->
+    <section id="contact" class="contact">
+      <h2><span>Costumer</span> Service</h2>
+      <p>Please drop us a line if you want to reserve a table or if you have questions.</p>
+      <div class="row"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.0203122780676!2d117.56385597406886!3d3.345134551918515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x321475000503f30d%3A0x25467c1ba4412d0a!2sKarang%20balik!5e0!3m2!1sid!2sid!4v1731960975078!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+       <!-- Formulir -->
+       <form id="contact-form">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" id="nama" placeholder="Nama">
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="text" id="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" id="no-hp" placeholder="No HP">
+        </div>
+        <button type="button" class="btn" id="submit-btn">Kirim Pesan</button>
+      </form>
+      
+      <!-- Notice Bar -->
+      <div class="notice-bar" id="notice-bar" style="display: none;">
+        <p id="notice-message"></p>
+      </div>
+
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6289506196636" target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+<a href="https://wa.me/6289506196636?text=Halo!%20Saya%20ingin%20bertanya%20tentang%20produk%20Anda." target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+    <!-- Contact Section end-->
+
+  
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

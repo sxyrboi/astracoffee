@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astra Coffee</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style-->
+    <link rel="stylesheet" href="css/style2.css" />
+
+    <!--Memastikan ikon Feather muncul-->
+
+    <head>
+      <script src="https://unpkg.com/feather-icons"></script>
+      <script>
+        feather.replace();  
+      </script>
+    </head>
+  </head>
+
+  <body>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Menu<span> Pesanan</span></a>
+
+      <div class="navbar-nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">Tentang Kami</a>
+        <a href="index.html#menu">Menu</a>
+        <a href="index.html#contact">Kontak</a>
+      </div>
+
+       <!-- Shopping Cart Icon -->
+<a href="#" id="shopping-cart">
+  <i data-feather="shopping-cart"></i>
+  <span id="cart-count" class="cart-count">0</span> <!-- Display item count here -->
+</a>
+<!-- Cart Modal Start -->
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-modal-content">
+      <!-- Close Button -->
+      <span id="close-modal" class="close-modal">&times;</span>
+
+      <!-- Cart Header -->
+      <h2>Pesanan Kamu</h2>
+
+      <!-- Cart Items Container -->
+      <div id="cart-items" class="cart-items">
+          <!-- Items will be dynamically injected here -->
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+          <p>Total Items: <span id="total-items">0</span></p>
+          <p>Total Price:IDR <span id="total-price">0</span></p>
+      </div>
+
+      <!-- Checkout Button -->
+      <a href="pembelanjaan.html">
+        <button id="checkout-button" class="checkout-button">Checkout</button>
+      </a>
+  </div>
+</div>
+<!-- Cart Modal End -->
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Navbar end -->
+<!-- Menu Section Start-->
+<section id="menu" class="menu">
+  <h2><span>Menu</span> Kami</h2>
+  <div class="row">
+    <div class="menu-card">
+      <img src="img/img/1.jpg" alt="Latte" class="menu-card-img">
+      <h3 class="menu-card-title">- Latte -</h3>
+      <p class="menu-card-price">IDR 25K</p>
+      <button class="add-to-cart" data-name="Latte" data-price="25K" data-id="1">Order</button>
+    </div>
+    <div class="menu-card">
+      <img src="img/img/2.jpg" alt="Espresso" class="menu-card-img">
+      <h3 class="menu-card-title">- Espresso -</h3>
+      <p class="menu-card-price">IDR 20K</p>
+      <button class="add-to-cart" data-name="Espresso" data-price="20K" data-id="2">Order</button>
+    </div>
+    <div class="menu-card">
+      <img src="img/img/6.jpg" alt="Hazelnut" class="menu-card-img">
+      <h3 class="menu-card-title">- Hazelnut -</h3>
+      <p class="menu-card-price">IDR 28K</p>
+      <button class="add-to-cart" data-name="Hazelnut" data-price="28k" data-id="3">Order</button>
+    </div>
+    <div class="menu-card">
+      <img src="img/img/4.jpg" alt="Cheese Cake" class="menu-card-img">
+      <h3 class="menu-card-title">- Cheese Cake -</h3>
+      <p class="menu-card-price">IDR 30K</p>
+      <button class="add-to-cart" data-name="Cheese Cake" data-price="30K" data-id="4">Order</button>
+    </div>
+    <div class="menu-card">
+      <img src="img/img/3.jpg" alt="Cherry Cake" class="menu-card-img">
+      <h3 class="menu-card-title">- Cherry Cake -</h3>
+      <p class="menu-card-price">IDR 35K</p>
+      <button class="add-to-cart" data-name="Cherry Cake" data-price="35K" data-id="5">Order</button>
+    </div>
+  </div>
+</section>
+<!-- Menu Section End-->
+
+<!-- Notifikasi Item Ditambahkan ke Keranjang -->
+<div id="notification-bar" class="notification-bar hidden">
+  <span id="notification-text"></span>
+</div>
+<!-- Notifikasi Item Dihapus dari Keranjang -->
+<div id="notification-bar" class="notification-bar hidden">
+  <span id="notification-text"></span>
+</div>
+
+
+
+ <!-- Contact Section Start-->
+ <!-- Checkout Button -->
+
+ <!-- Checkout Form -->
+<!-- Checkout Form -->
+<div id="checkout-modal" class="checkout-modal">
+  <div class="checkout-modal-content">
+      <!-- Tombol untuk menutup modal -->
+      <button id="close-checkout-modal" class="close-checkout-modal">&times;</button>
+      <h2>Checkout</h2>
+      <div id="checkout-summary">
+          <p>Total Items: <span id="checkout-total-items">0</span></p>
+          <p>Total Price: <span id="checkout-total-price">0</span></p>
+      </div>
+      <!-- Tombol Checkout sebagai link dengan href -->
+      <a href="pembelanjaan.html">
+
+        <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6289506196636" target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+<a href="https://wa.me/6289506196636?text=Halo!%20Saya%20ingin%20bertanya%20tentang%20produk%20Anda." target="_blank" class="whatsapp-float">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+
+<!-- Footer start -->
+ <!-- Footer start -->
+ <footer>
+  <div class="social">
+    <!-- Instagram link -->
+    <a href="https://www.instagram.com/mftarzky?igsh=YmFwY3pvbnR2dTNp" target="_blank">
+      <i data-feather="instagram"></i>
+    </a>
+    
+    <!-- Twitter link -->
+    <a href="https://twitter.com/yourusername" target="_blank">
+      <i data-feather="twitter"></i>
+    </a>
+    
+    <!-- Facebook link -->
+    <a href="https://www.facebook.com/yourusername" target="_blank">
+      <i data-feather="facebook"></i>
+    </a>
+  </div>
+  
+<div class="links">
+  <a href="#home">Home</a>
+  <a href="#about">Tentang Kami</a>
+  <a href="#menu">Menu</a>
+  <a href="#contact">Kontak</a>
+</div>
+
+<div class="credit">
+  <p>Created by <a href="">Miftah Arizky</a>. | &copy; 2024.</p>
+</div>
+
+</footer>
+<!-- Footer end -->
+
+<!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript-->
+    <script src="js/script2.js"></script>
+  </body>
+</html>
